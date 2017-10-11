@@ -8,16 +8,19 @@ a {
     color: inherit;
 }
 
+
+
 .bg-img1 {
     background: lightgray;
-    background: url(images/bg2.jpg) no-repeat bottom;
+    background: url(images/bg2.jpg) no-repeat top;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
 }
 .bg-img2 {
     background: grey;
-    /*background: url(images/bg1.jpg) no-repeat bottom;*/
+    background: url(images/bg2.jpg) no-repeat bottom;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
 }
@@ -127,11 +130,11 @@ header {
 
 .photo-block-mid {
     background: black;
-    width: 200px;
+    width: 300px;
     border-radius: 50%;
-    height: 200px;
+    height: 300px;
     position: absolute;
-    top:-125px;
+    top:-180px;
 }
 .photo-block {
     background: transparent;
@@ -144,6 +147,7 @@ header {
 
 .info-main {
     width: 45%;
+    font-size: 1.5em;
 }
 
 .sec-3 {
@@ -162,6 +166,7 @@ header {
 }
 .skills {
     width: 33.33%;
+    min-width: 243px;
     background-color: white;
     padding: 100px 0;
     /*height: 214px;*/
@@ -170,7 +175,7 @@ header {
     justify-content: center;
     align-items: center;
     align-content:center;
-    line-height: 0.3;
+    line-height: 0;
     transition: 0.5s;
 }
 
@@ -195,6 +200,53 @@ header {
     color: black;
 }
 
+.sec-4 {
+    height:500px;
+    background-color: grey;
+}
+
+
+footer {
+    padding: 50px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.left-footer {
+    width: 50%;
+}
+.right-footer {
+    width: 50%;
+    text-align: center;
+    line-height: 2;
+}
+
+.load-prsnt-footer {
+    width:fit-content;
+    margin: auto;
+}
+
+.load-prsnt-footer a{
+    text-decoration: none;
+    padding: 10px 150px;
+    border: solid 1px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.author {
+    margin: auto;
+    margin-top: 20px;
+    width: 170px;
+}
+
+.my-links a {
+    display: inline-block;
+    margin: 0 5px;
+}
 
 
 
