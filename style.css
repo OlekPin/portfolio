@@ -9,6 +9,8 @@ a {
 
 .bg-img1 {
     background: lightgray;
+    background: url(images/bg2.jpg) no-repeat top center;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
 }
@@ -131,6 +133,7 @@ header {
 .info-main {
     width: 45%;
 }
+
 
 
 
