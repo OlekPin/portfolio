@@ -1,5 +1,6 @@
 body, html {
     margin: 0;
+    font-family: 'Yantramanav', sans-serif;
 }
 
 a {
@@ -9,7 +10,7 @@ a {
 
 .bg-img1 {
     background: lightgray;
-    background: url(images/bg2.jpg) no-repeat top center;
+    background: url(images/bg2.jpg) no-repeat bottom;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
@@ -28,6 +29,7 @@ header {
 }
 
 #heder-txt {
+
     float: left;
     color: white;
 }
@@ -47,7 +49,7 @@ header {
 .load-prsnt a {
     text-decoration: none;
     color: white;
-    padding: 0 70px;
+    padding: 0 40px;
     border: solid 1px;
     font-size: 1.5em;
     transition: 0.5s;
@@ -83,12 +85,16 @@ header {
     color: slategrey;
 }
 
+.info-header-txt {
+    text-transform: uppercase;
+}
+
 .sec-2 {
     background: white;
     /*height: 500px;*/
     padding: 30px;
 }
-.sec-2-wrap {
+.container {
     width: 60%;
     margin: auto;
     position: relative;
@@ -111,6 +117,9 @@ header {
     background-color: red;
     margin: 0 0 35px 0;
 }
+.slash-white {
+    background-color: white;
+}
 
 
 .photo-block-mid {
@@ -119,7 +128,7 @@ header {
     border-radius: 50%;
     height: 200px;
     position: absolute;
-    top:-100px;
+    top:-125px;
 }
 .photo-block {
     background: transparent;
@@ -132,6 +141,52 @@ header {
 
 .info-main {
     width: 45%;
+}
+
+.sec-3 {
+    padding: 30px;
+}
+
+.skills-header {
+    color: white;
+    text-transform: uppercase;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.skills {
+    width: 214px;
+    background-color: honeydew;
+    height: 214px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    line-height: 0.3;
+    transition: 0.5s;
+}
+
+.skills:nth-child(2n) {
+    background-color: lightblue;
+}
+
+.skills:hover {
+    background-color: lightsteelblue;
+    transition: 0.5s;
+}
+.skills:nth-child(2n) .skill-header {
+    color: steelblue;
+}
+
+.skill-header {
+    width: 100%;
+    text-align: center;
+    color: red;
 }
 
 
