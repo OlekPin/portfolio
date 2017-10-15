@@ -1,4 +1,4 @@
-body, html {
+body, html, h1 {
     margin: 0;
     font-family: 'Yantramanav', sans-serif;
 }
@@ -95,6 +95,8 @@ header {
     line-height: 0.7;
 }
 
+
+
 .sec-1 span {
     font-size: 2rem;
     color: red;
@@ -134,12 +136,28 @@ header {
     -o-transition: all 0.3s ease;;
     transition: all 0.3s ease;
 }
-.sec-2 .container:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-}
+/*.sec-2 .container:hover {*/
+    /*-webkit-transform: scale(1.2);*/
+    /*-ms-transform: scale(1.2);*/
+    /*transform: scale(1.2);*/
+/*}*/
 
+/*.fb:hover {*/
+    /*background-color: #afbdd4;*/
+    /*border-radius: 50%;*/
+/*}*/
+/*.linkedin:hover {*/
+    /*background-color: lightskyblue;*/
+    /*border-radius: 50%;*/
+/*}*/
+/*.instagram:hover {*/
+    /*background-color: #517fa4;*/
+    /*border-radius: 50%;*/
+/*}*/
+/*.git:hover {*/
+    /*background-color: bisque;*/
+    /*border-radius: 50%;*/
+/*}*/
 
 .sec-1-photo-wrap {
     width: 100%;
@@ -176,13 +194,13 @@ header {
 
 .photo-block-mid {
     background: white;
-    width: 350px;
+    width: 310px;
     border-radius: 50%;
-    height: 350px;
+    height: 310px;
     position: absolute;
-    bottom: -365px;
+    bottom: -315px;
     z-index: 9999;
-    padding: 10px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
 }
 
 .photo-block-mid img{
@@ -263,6 +281,16 @@ header {
     color: white;
 }
 
+.specopt {
+    text-align: center;
+    font-size: 2em;
+    margin: auto;
+    margin-bottom: 35px;
+    width: 60%;
+    background-color: floralwhite;
+}
+
+
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -327,7 +355,7 @@ header {
     width: 100%;
     text-align: center;
     color: black;
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -349,9 +377,13 @@ header {
 .back {
     -webkit-transform: rotateY(180deg);
     z-index:9999;
+    width: 70%;
 }
-.back ul {
+.back .bord {
     border-bottom: 0.5px solid red;
+}
+.back .skill-header {
+    color: black!important;
 }
 
 
@@ -443,7 +475,7 @@ footer {
 
 .contentnav {
     position: absolute;
-    left: 48.2%;
+    left: 45%;
     bottom: 20px;
     z-index: 100;
     text-align: center;
