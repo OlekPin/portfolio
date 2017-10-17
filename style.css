@@ -198,7 +198,7 @@ header {
     border-radius: 50%;
     height: 310px;
     position: absolute;
-    bottom: -315px;
+    bottom: -335px;
     z-index: 9999;
     padding: 5px 5px 5px 5px;
 }
@@ -266,6 +266,7 @@ header {
     -moz-transition: all 0s ease;;
     -o-transition: all 0s ease;;
     transition: all 0s ease;
+    position: absolute;
 }
 #1-skills {
     display: block;
@@ -388,7 +389,7 @@ header {
 
 
 .sec-4 {
-    background-color: grey;
+    background-color: darkgrey;
     padding: 30px;
 }
 
@@ -475,7 +476,7 @@ footer {
 
 .contentnav {
     position: absolute;
-    left: 45%;
+    left: 48%;
     bottom: 20px;
     z-index: 100;
     text-align: center;
@@ -502,6 +503,14 @@ footer {
 }
 .hidden {
     display: none;
+}
+
+
+
+/*MEDIA*/
+
+@media screen and (max-width: 1050px) {
+    
 }
 
 

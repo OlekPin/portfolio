@@ -322,11 +322,20 @@
         $(".contentnav a").removeClass('active-btn');
         $active.addClass('active-btn');
         var activeSlide = $active.attr("rel") + '-skills';
-        $("#" + prevSlide).fadeOut("slow");
+
+        $("#" + prevSlide).queue("fx", []).fadeTo("slow", 0);
         setTimeout(function () {
-            $("#" + activeSlide).fadeIn("slow")
+            $("#" + prevSlide).queue("fx", []).css({"display": "none"});
+            $("#" + activeSlide).queue("fx", []).css({"display": "block", "opacity": "0"}).fadeTo("slow", 1);
         }, 500);
-        $(".sec-2").fadeTo("slow", 0.5).fadeTo("slow", 1);
+
+
+//        $("#" + prevSlide).fadeOut("slow");
+//        setTimeout(function () {
+//            $("#" + activeSlide).fadeIn("slow")
+//        }, 500);
+        $(".sec-2").queue("fx", []).fadeTo("slow", 0.5).fadeTo("slow", 1);
+
     };
 
     rotation = function () {
@@ -339,6 +348,7 @@
         }, 5000);
     };
     rotation();
+
     $(".contentnav a").click(function () {
         $active = $(this);
         clearInterval(play);
@@ -347,7 +357,7 @@
         return false;
     });
 
-    $(".sec-2 .container").mouseover(function () {
+    $(".sec-2 .cont").mouseover(function () {
         clearInterval(play);
     }).mouseout(function () {
         rotation();
@@ -361,6 +371,7 @@
         }
         rotate();
         rotation();
+
         return false;
     });
     $("#prev-arrow").click(function () {
