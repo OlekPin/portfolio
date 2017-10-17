@@ -175,6 +175,14 @@ header {
     width: 50%;
     text-align: center;
 }
+.sec-2-right-col a {
+    margin: 0 5px;
+}
+.sec-2-right-col img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
 .sec-2-right-col .load-prsnt-footer a {
     padding: 10px 105px;
 }
@@ -256,7 +264,7 @@ header {
 #next-arrow {
     position: absolute;
     bottom: 275px;
-    right: 30px;
+    right: 55px;
     cursor: pointer;
 }
 
@@ -289,6 +297,7 @@ header {
     margin-bottom: 35px;
     width: 60%;
     background-color: floralwhite;
+    border-radius: 15px;
 }
 
 
@@ -319,6 +328,7 @@ header {
     /*line-height: 0;*/
     transform-style: preserve-3d; /*Сохраняет трехмерное воспроизведение эффекта*/
     transition: 0.5s;
+    border-radius: 30px;
 }
 
 
@@ -330,6 +340,7 @@ header {
 
 .rot:nth-child(2n) .skills .skill-header {
     color: white;
+
 }
 .rot:hover .skills{
     -o-transform: rotateY(180deg);
@@ -371,13 +382,18 @@ header {
 
 .face {
     position: absolute;
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+    z-index: 9999;
 }
 
 
 .back {
+    /*position: absolute;*/
     -webkit-transform: rotateY(180deg);
-    z-index:9999;
+    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+    backface-visibility: hidden;
+    /*z-index:999;*/
     width: 70%;
 }
 .back .bord {
@@ -466,6 +482,12 @@ footer {
     margin: 0 5px;
 }
 
+.my-links a:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -476,8 +498,8 @@ footer {
 
 .contentnav {
     position: absolute;
-    left: 48%;
-    bottom: 20px;
+    left: 50%;
+    bottom: 50px;
     z-index: 100;
     text-align: center;
     line-height: 30px;
@@ -485,18 +507,32 @@ footer {
 }
 
 .contentnav a {
-    margin: 5px;
+    /*margin: 5px;*/
     border: 1px solid red;
     border-radius: 50%;
     text-decoration: none;
     background-color: red;
-    padding:0 11px;
+    padding:10px 10px;
+    position: absolute;
 }
 
+.contentnav a:first-child {
+    left: -35px;
+}
+.contentnav a:first-child.active-btn {
+    left: -40px;
+}
+.contentnav a:nth-child(2).active-btn{
+    left: -2px;
+
+}
+.contentnav a:nth-child(3){
+    left: 35px;
+}
 .contentnav a.active-btn {
     background-color: white;
-    padding:3px 14px;
-
+    padding:12px 12px;
+    top:-3px;
 }
 .active {
     display: inherit;
@@ -510,7 +546,9 @@ footer {
 /*MEDIA*/
 
 @media screen and (max-width: 1050px) {
-    
+    #prev-arrow, #next-arrow {
+        bottom: initial;
+    }
 }
 
 
