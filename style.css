@@ -44,12 +44,13 @@ header {
     position: fixed;
     margin: 30px 5%;
     width: 90%;
+    z-index:9999;
 }
 
 #heder-txt {
 font-size: 40px;
     float: left;
-    color: white;
+    /*color: white;*/
 }
 
 #heder-txt h1 {
@@ -61,7 +62,7 @@ font-size: 40px;
 }
 
 #heder-txt a:hover {
-    color: cornflowerblue;
+    color: cornflowerblue!important;
 }
 
 .load-prsnt a {
@@ -74,11 +75,8 @@ font-size: 40px;
 }
 
 .load-prsnt a:hover {
-    color: red;
-    background-color: white;
+    color: red!important;
     text-decoration: none;
-
-    transition: 1s;
 }
 
 .load-prsnt:hover {
@@ -191,6 +189,10 @@ font-size: 40px;
     padding: 10px 105px;
 }
 
+.sec-2-right-col .specopt {
+    width: 85%;
+}
+
 
 .slash {
     /*position: absolute;*/
@@ -270,6 +272,10 @@ font-size: 40px;
     cursor: pointer;
 }
 
+.popover {
+    z-index: 9999;
+}
+
 .popover-header {
     font-size: 2em;
     background-color: lightgrey;
@@ -321,7 +327,7 @@ font-size: 40px;
     margin: auto;
     margin-bottom: 35px;
     width: 60%;
-    background-color: floralwhite;
+    background-color: aliceblue;
     border-radius: 15px;
     border: 3px solid;
 }
@@ -436,7 +442,7 @@ font-size: 40px;
 
 
 .sec-4 {
-    background-color: darkgrey;
+    background-color: currentColor;
     padding: 30px;
 }
 
@@ -450,7 +456,8 @@ font-size: 40px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    color: white;
 }
 
 .my-contacts div {

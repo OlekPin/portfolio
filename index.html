@@ -153,7 +153,7 @@
                 <div id="4-skills" class="cont">
                     <div class="sec-2-info-wrap">
                         <div class="sec-2-right-col">
-
+                            <div class="specopt"> Click on the one of the hobbies</div>
                         </div>
                         <div class="header-txt">
                             My hobbies and interests
@@ -161,14 +161,16 @@
                         <div class="slash"></div>
                         <div class="hobbies">
                             <a tabindex="0" role="button"
-                               data-toggle="popover" title="Sport activities" data-placement="bottom"
-                               data-content="And here's some amazing content. It's very engaging. Right?">
+                               data-toggle="popover" title="Music" data-placement="bottom"
+                               data-content="My first and the most valuable hobby is music. I can listen to it whole day
+                                long 24/7. Also I'm trying my best in guitar playing.">
                                 <div class="hobby"><img
-                                        src="images/guitar.svg" alt="Guitar playing" width="100"></div>
+                                        src="images/guitar.svg" alt="Music" width="100"></div>
                             </a>
                             <a tabindex="0" role="button"
-                               data-toggle="popover" title="Sport activities" data-placement="bottom"
-                               data-content="And here's some amazing content. It's very engaging. Right?">
+                               data-toggle="popover" title="Traveling" data-placement="bottom"
+                               data-content="Traveling with friends always makes me happy and gives nice opportunity to
+                                go away from all problems">
                                 <div class="hobby"><img src="images/camping.svg" alt="Traveling" width="100"></div>
                             </a>
                             <a tabindex="0" role="button"
@@ -478,12 +480,12 @@
         return false;
     });
 
-    window.onscroll = function(){
+    window.onscroll = function () {
         var html = document.documentElement, body = document.body;
         var HdrStyle = $('#heder-txt a');
         var BlkStyle = $('#prsnt a');
 
-        if(html.scrollTop<450||body.scrollTop<450 && html.scrollTop>1200||body.scrollTop>1200) {
+        if (html.scrollTop < 450 || body.scrollTop < 450 && html.scrollTop > 1200 || body.scrollTop > 1200) {
 
             BlkStyle.css({"color": "white", "background-color": "transparent"});
             HdrStyle.css({"color": "white"});
@@ -495,16 +497,13 @@
         } else {
             BlkStyle.css({"color": "red"});
             HdrStyle.css({"color": "red"});
-        BlkStyle.mouseover(function () {
+            BlkStyle.mouseover(function () {
                 BlkStyle.css({"background-color": "black"});
             }).mouseout(function () {
                 BlkStyle.css({"background-color": "white"});
             });
         }
     }
-
-
-
 
 
 </script>
