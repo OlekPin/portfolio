@@ -1,6 +1,10 @@
-body, html, h1 {
+body, html {
     margin: 0;
     font-family: 'Yantramanav', sans-serif;
+    font-size: 15px;
+}
+h1 {
+    font-size: 1em;
 }
 
 body div {
@@ -10,9 +14,10 @@ body div {
     transition: all 0.3s ease;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+a, a:hover, a:focus, img:focus {
+    text-decoration: none!important;
+    color: white;
+    outline-color: initial;
 }
 li {
     list-style: none;
@@ -42,7 +47,7 @@ header {
 }
 
 #heder-txt {
-
+font-size: 40px;
     float: left;
     color: white;
 }
@@ -107,12 +112,11 @@ header {
     font-size: 2.5em;
     /*margin: 10px 0;*/
     font-weight: bold;
-    width: 50%;
 }
 
 .sec-2 {
     background: white;
-    height: 655px;
+    height: 750px;
     padding: 55px;
     position: relative;
 
@@ -206,13 +210,13 @@ header {
     border-radius: 50%;
     height: 310px;
     position: absolute;
-    bottom: -335px;
+    bottom: -330px;
     z-index: 9999;
     padding: 5px 5px 5px 5px;
 }
 
 .photo-block-mid img{
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .photo-block {
     background: transparent;
@@ -220,12 +224,12 @@ header {
 
 .descr {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .descr-block {
     border-left:1px solid cadetblue;
-    width: 45%;
+    width: 50%;
     padding-left: 50px;
 }
 .descr-block:first-child {
@@ -242,8 +246,9 @@ header {
     list-style: decimal;
 }
 .info-main {
-    width: 45%;
+    width: 50%;
     font-size: 1.8em;
+    padding: 10px;
 }
 
 .second-header {
@@ -253,6 +258,24 @@ header {
 .terms {
     font-size: 2em;
     color: cadetblue;
+}
+.hobbies {
+    display: flex;
+}
+.hobby {
+    margin: 30px 10px;
+    padding: 35px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    cursor: pointer;
+}
+
+.popover-header {
+    font-size: 2em;
+    background-color: lightgrey;
+}
+.popover-body {
+    font-size: 1.5em;
 }
 
 #prev-arrow {
@@ -275,6 +298,8 @@ header {
     -o-transition: all 0s ease;;
     transition: all 0s ease;
     position: absolute;
+    width: 95%;
+    /*padding: inherit;*/
 }
 #1-skills {
     display: block;
@@ -298,6 +323,7 @@ header {
     width: 60%;
     background-color: floralwhite;
     border-radius: 15px;
+    border: 3px solid;
 }
 
 
@@ -327,15 +353,16 @@ header {
     text-align: center;
     /*line-height: 0;*/
     transform-style: preserve-3d; /*Сохраняет трехмерное воспроизведение эффекта*/
-    transition: 0.5s;
+    transition: 1s;
     border-radius: 30px;
+    border: 3px solid;
 }
 
 
 
-.rot:nth-child(2n) .skills{
-    background-color: black;
-}
+/*.rot:nth-child(2n) .skills{*/
+    /*background-color: darkkhaki;*/
+/*}*/
 
 
 .rot:nth-child(2n) .skills .skill-header {
@@ -396,6 +423,10 @@ header {
     /*z-index:999;*/
     width: 70%;
 }
+
+.back ul {
+    padding:0;
+}
 .back .bord {
     border-bottom: 0.5px solid red;
 }
@@ -409,9 +440,7 @@ header {
     padding: 30px;
 }
 
-ul {
-    padding: 0;
-}
+
 
 .contacts-container {
     width: 50%;
@@ -443,7 +472,15 @@ footer {
 
 .left-footer {
     width: 50%;
+    color: black;
+    text-align: center;
 }
+
+
+#license a{
+    color: dodgerblue;
+}
+
 
 .right-footer {
     width: 50%;
@@ -454,6 +491,7 @@ footer {
 .load-prsnt-footer {
     width: fit-content;
     margin: auto;
+
 }
 
 .load-prsnt-footer a:hover {
@@ -469,6 +507,7 @@ footer {
     font-size: 1.5em;
     text-align: center;
     transition: 0.5s;
+    color: black;
 }
 
 .author {
@@ -498,7 +537,7 @@ footer {
 
 .contentnav {
     position: absolute;
-    left: 50%;
+    left: 48.1%;
     bottom: 50px;
     z-index: 100;
     text-align: center;
@@ -529,6 +568,12 @@ footer {
 .contentnav a:nth-child(3){
     left: 35px;
 }
+.contentnav a:nth-child(4){
+    left: 70px;
+}
+.contentnav a:nth-child(4).active-btn {
+    left: 68px;
+}
 .contentnav a.active-btn {
     background-color: white;
     padding:12px 12px;
@@ -540,6 +585,7 @@ footer {
 .hidden {
     display: none;
 }
+
 
 
 
