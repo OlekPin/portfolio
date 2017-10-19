@@ -12,8 +12,8 @@
 <body>
 <div class="wrapper">
     <header class="clearfix">
-        <div id="heder-txt"><a href="#"><h1> Main page</h1></a></div>
-        <div class="load-prsnt"><a href="#">Download CV</a></div>
+        <div id="heder-txt"><a href="#"><h1>Main page</h1></a></div>
+        <div id="prsnt" class="load-prsnt"><a href="#">Download CV</a></div>
     </header>
     <div class="bg-img1">
 
@@ -339,7 +339,7 @@
         <section class="sec-4">
             <div class="container">
                 <div class="contacts-container">
-                    <div class="header-txt">
+                    <div class="header-txt skills-header">
                         Contacts
                     </div>
                     <div class="slash"></div>
@@ -477,6 +477,31 @@
         rotation();
         return false;
     });
+
+    window.onscroll = function(){
+        var html = document.documentElement, body = document.body;
+        var HdrStyle = $('#heder-txt a');
+        var BlkStyle = $('#prsnt a');
+
+        if(html.scrollTop<450||body.scrollTop<450 && html.scrollTop>1200||body.scrollTop>1200) {
+
+            BlkStyle.css({"color": "white", "background-color": "transparent"});
+            HdrStyle.css({"color": "white"});
+            BlkStyle.mouseover(function () {
+                BlkStyle.css({"background-color": "white"});
+            }).mouseout(function () {
+                BlkStyle.css({"background-color": "transparent"});
+            });
+        } else {
+            BlkStyle.css({"color": "red"});
+            HdrStyle.css({"color": "red"});
+        BlkStyle.mouseover(function () {
+                BlkStyle.css({"background-color": "black"});
+            }).mouseout(function () {
+                BlkStyle.css({"background-color": "white"});
+            });
+        }
+    }
 
 
 
